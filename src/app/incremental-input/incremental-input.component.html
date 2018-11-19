@@ -1,0 +1,21 @@
+<div class="d-flex">
+  <button class="btn btn-primary btn-sm"
+          type="button"
+          [disabled]="input.value <= minValue"
+          (click)="decrement()">
+    <i class="fi fi-minus"></i>
+  </button>
+  <input
+    #input
+    type="tel"
+    [id]="fieldId"
+    [formControl]="field"
+    class="form-control"
+    [min]="minValue"
+    (input)="onInput($event.target.value)">
+  <button class="btn btn-sm"
+          type="button"
+          (click)="increment()">
+    <i class="fi fi-plus"></i>
+  </button>
+</div>

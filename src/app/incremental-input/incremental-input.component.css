@@ -1,0 +1,32 @@
+input.form-control {
+  padding-right: 35px;
+  padding-left: 35px;
+  text-align: center;
+}
+
+div {
+  position: relative;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding: 0.25rem;
+  line-height: 8px;
+  font-size: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+}
+
+button:first-child {
+  left: 5px;
+}
+
+button:last-child {
+  right: 5px;
+}
+
